@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie database</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <link rel="stylesheet" href="style.css">
+    </head>
 
+    <body>
+        <div class="container">
+            <div class="movie-wrap">
+                <div class="movie-search">
+                    <h2 class="title">Find a Film That You like</h2>
+                    <blockquote>The desire to hear a story well told, triumphs over the internet, film and television sometimes. </blockquote>
+                    <cite>_   Pankaj Kapur</cite>
+
+                    <div class="movie-search-box">
+                        <input type="text" class="search-bar" 
+                        placeholder="Enter the title" id="search-bar">
+
+                        <button type="submit" class="search-bt" id="search-btn">
+                            <i class="fas fa-search"></i>
+                          </button>
+                          
+                    </div>
+                </div>
+                
+                <div class="Search-results">
+                    <h2 class="title">Your Search Results:</h2>
+                    <div id="movies">
+                      <!-- movies -->
+                      <div class="movie-results">
+                        <div class="movie-poster">
+                          <img src="poster placeholder.jpg.2" alt="movie">
+                        </div>
+                        <div class="movie-title">
+                          <h3 class="title-text"></h3>
+                          <a href="#" class="info-btn">Get More Info</a>
+                        </div>
+                      </div>
+                      <!-- end movies -->
+                    </div>
+                  </div>
+                  
+
+                    </div>
+                </div>
+                <div class="movie-details">
+                    <button type="button" class="btn-close" id="btn-close">
+                        <i class="fas fa-times"></i> 
+                    </button>
+
+                    <!-- movie info -->
+                    <div class="movie-details-content">
+                        <h2 class="movie-title-details">Movie Title here</h2>
+                        <p class="movie-category">Category:</p>
+                        <h2  class="description-head">Description:</h2>
+                        <p class="Description">Iron Man is a fictional superhero who wears a suit of armor. His alter ego is Tony Stark. 
+                            He was created by Stan Lee, Jack Kirby and Larry Lieber for Marvel Comics in Tales of Suspense #39 in the 
+                            year 1963 and appears in their comic books.
+                             He is also one of the main protagonists in the Marvel Cinematic Universe.</p>
+                    </div>
+                    <div class="movie-poster-details">
+                        <img src="poster placeholder.jpg.2" alt="movie poster" class="info-image">
+                    </div>
+                   <div class="movie-trailer">
+                    <a href="#" target="_blank">Watch video</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+        <script src="index.js"></script>
+    </body>
+</html>

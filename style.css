@@ -1,1 +1,240 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+  * {
+    padding: 15;
+    margin: 20;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-weight:200;
+    font-size: 20;
+    line-height: 1.6;
+    font-family: 'Poppins' , sans-serif;
+    width: 100%;
+  } 
+
+  button {
+    background-color: rgb(1, 2, 5);
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    color: #F00;
+  }
+
+  .text {
+    opacity: 0.8;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+ .container {
+    min-height: 100vh;
+ }
+
+ .movie-wrap {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+ }
+
+ .movie-search {
+    margin: 30px;
+    
+ }
+
+ .movie-search cite {
+    font-size: 12px;
+ }
+
+ .movie-search-box {
+    margin: 40px;
+    display: flex;
+    align-items: stretch;
+ }
+
+ .ssearch-bar,
+ .search-bt {
+    width: 100%;
+ }
+
+ .search-bar{
+    padding: 0 5px;
+    font-size: 15;
+    font-family: inherit;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100%;
+}
+
+input[type="text"] {
+    border: 2px solid #F00; 
+  }
+
+.search-bar::placeholder {
+    color:rgb(221, 20, 20)
+}
+
+.search-bt {
+    width: 55px;
+    height: 27px;
+    font-size: 18px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.search-bt:hover {
+   background-color: rgb(133, 33, 33);
+}
+  
+.search-result {
+    margin-top: 30px;
+}
+
+.movies {
+    margin: 8px 0;
+}
+
+.movie-results {
+    border-radius: 8px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px red;
+}
+
+.movie-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+  color: red;
+  background-color: black;
+  border-radius: 16px;
+   width: 90%;
+   height: 90%;
+   overflow-y: scroll;
+   display: none;
+   padding: 2rem o;
+   box-shadow: 0 4px 21px -12px rgb(19, 17, 17);
+
+}
+
+.movie-details::-webkit-scrollbar{
+ margin: 5px;
+}
+
+.movie-details::-webkit-scrollbar-thumb {
+background: #f0f0f0;
+border-radius: 28px;
+}
+
+.description-head {
+padding: 40px;
+color: #fff;
+}
+
+.Description {
+  color: #fff;
+}
+
+.meal-details-content {
+  margin: 20px;
+}
+
+.movie-title-details {
+  letter-spacing: 1px;
+  font-size: 32px;
+}
+
+.btn-close {
+  width: 55px;
+  height: 27px;
+  font-size: 18px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.info-image {
+  border-radius: 12px;
+}
+
+.movie-trailer {
+  margin: 60px;
+}
+
+.movie-trailer a {
+  color: #fa1515;
+  font-weight: 700px;
+  font-size: 18px;
+}
+
+.movie-trailer a:hover {
+  color:rgb(231, 56, 56);
+}
+
+
+.movie-poster {
+    align-items: center;
+    display: inline-flex
+}
+
+.movie-title {
+    padding: 60px 4px;
+}
+
+.movie-title h3 {
+ font-size: 24px;
+}
+
+.info-btn {
+    text-decoration: solid;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ce0e1e, #FF00FF);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease;
+    border-radius: 25px;
+ }
+  
+.info-btn:hover {
+        background-position: -100% 0;
+      }
+    
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 25px;
+}
+
+.movie-results {
+    margin: 0px;
+}
+
+.movie-details {
+  width: 900px;
+}
