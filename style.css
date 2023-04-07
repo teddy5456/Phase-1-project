@@ -134,7 +134,22 @@ input[type="text"] {
    display: none;
    padding: 2rem o;
    box-shadow: 0 4px 21px -12px rgb(19, 17, 17);
+   text-align: center;
 
+}
+
+.movie-details-content.show {
+  display: block;
+}
+
+
+.movie-details-content {
+  max-width: 800px;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .movie-details::-webkit-scrollbar{
@@ -165,16 +180,13 @@ color: #fff;
 }
 
 .btn-close {
+  color: #ce0e1e;
   width: 55px;
   height: 27px;
   font-size: 18px;
-  border-bottom-right-radius: 12px;
-  border-top-right-radius: 12px;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
+  padding: 15px;
+  margin: 20px;
+  box-sizing: border-box;
 }
 
 .info-image {
@@ -227,14 +239,29 @@ color: #fff;
 
 #movies {
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(3 ,1fr);
     gap: 25px;
 }
 
 .movie-results {
-    margin: 0px;
+    margin: 40px;
 }
 
 .movie-details {
-  width: 900px;
+  width: 1300px;
 }
+
+.movie-results img {
+  max-width: 100%;
+}
+
+.movie-results title {
+  max-width: 100%;
+}
+
+.movie-results .info-btn {
+  max-width: 100%;
+}
+
+
+
