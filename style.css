@@ -263,5 +263,52 @@ color: #fff;
   max-width: 100%;
 }
 
+.main-class-list {
+  margin-top: 30px;
+}
 
+#cast {
+  display: grid;
+  grid-template-columns: repeat(7 ,1fr);
+  gap: 25px;
+  }
+  
+  .cast-list {
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+    gap: 25px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 25px;
+  margin-top: 70px;
+  }
+  
+  .cast-list img {
+  max-width: 150px;
+  margin-bottom: 100px;
+ 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  }
+  
+  .cast-name {
+  color: #f0f0f0;
+  text-align: center;
+  }
 
+  .cast-list::-webkit-scrollbar {
+    margin: 5px;
+  }
+  
+  .cast-list::-webkit-scrollbar-thumb{
+    background: #1b224b;
+    border-radius: 28px;
+    width: 4px;
+  }
+  
+  
+  
+  
+  
