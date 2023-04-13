@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => console.error('Error:', error));
     }
+    
 
     //get movie details
     function getMovieDetails(e) {
@@ -92,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 });
-
 function movieDetailsModal(data) {
   console.log(data);
   fetch(`https://api.themoviedb.org/3/movie/${data.id}/videos?api_key=b2ef1799992ce938b1ada1c064f8cdb7&language=en-US`)
@@ -138,9 +138,6 @@ function movieDetailsModal(data) {
                   
                   html += `
                       </div>
-                      <div class="movie-trailer">
-                          <a href="https://www.youtube.com/watch?v=${videoKey}" target="_blank">Watch video</a>
-                      </div>
                   `;
                   movieDetailsContent.innerHTML = html;
                   movieDetails.parentElement.classList.add('showDetails');
@@ -151,7 +148,6 @@ function movieDetailsModal(data) {
       })
       .catch(error => console.error('Error:', error));
 }
- 
 
 infoCloseBtn.addEventListener('click', function() {
   movieDetails.style.display = "none";
